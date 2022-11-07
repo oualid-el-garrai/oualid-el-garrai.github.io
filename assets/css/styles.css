@@ -18,7 +18,7 @@
   --first-color: hsl(var(--hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
   --title-color: hsl(var(--hue), 12%, 95%);
-  --text-color: hsl(var(--hue), 12%, 75%);
+  --text-color: rgb(198, 198, 198);
   --body-color: hsl(var(--hue), 40%, 8%);
   --container-color: hsl(var(--hue), 24%, 12%);
 
@@ -52,7 +52,7 @@
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
+  background-color: #2c497f;
   color: var(--text-color);
   transition: .3s; /* For animation dark mode */
   cursor: url(cursor.png), auto;
@@ -263,7 +263,7 @@ body.dark-theme {
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
+  background-color: #0067E5;
 }
 
 .button__small {
@@ -330,9 +330,7 @@ body.dark-theme {
   height: 100%;
   bottom: -100%;
   left: 0;
-  background: linear-gradient(180deg, 
-              hsla(var(--hue), 24%, 40%, .3) 0%, 
-              hsla(var(--hue), 24%, 4%, 1) 95%);
+  background: #00000075;
   display: grid;
   align-items: flex-end;
   padding: 1.5rem 1.25rem;
@@ -418,7 +416,7 @@ body.dark-theme {
 
 /* Activate button filter */
 .filter-tab-active {
-  background-color: var(--body-color);
+  background-color: #0067E5;
 }
 
 /*=============== FOOTER ===============*/
